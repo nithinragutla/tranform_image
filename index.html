@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            display: block;
+            text-align: center;
+            
+        }
+        .header{
+            text-align: center;
+            color:rgb(243, 4, 4);
+            padding: 5px;
+        }
+        button{
+            background-color:rgb(255, 204, 185);
+            font-style:unset;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 10px;
+
+           
+        }
+        button:hover{
+            background-color: rgb(218, 32, 32); 
+        }
+        img{
+            border-radius: 10px;
+            border-style:solid;
+            margin-top: 10%;
+            margin-bottom: 8px;
+            position: relative;
+            transition: all;
+            transition-duration: 2s;
+        
+        }
+        #rotate:hover~.main img{
+            transform: rotate(90deg);
+        }
+        #skew:hover~.main img{
+            transform: skewx(45deg);
+        }
+        #scale:hover~.main img{
+            transform: scale(1.5);
+        }
+    
+        #translate:hover~.main img{
+            transform: translate(80px,90px);
+        }
+        footer{
+            height: 50px;
+            color:brown;
+            margin-top: 100px;
+            background-color:rgb(255, 204, 185);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>TRANSFORM IMAGE</h1><hr></hr></div>
+        <div >
+            <button id="translate">TRANSLATE</button>
+            <button id="rotate">ROTATE</button>
+            <button id="scale">SCALE</button>
+            <button id="skew">SKEW</button>
+            <div class="main">
+                <img src="https://i.pinimg.com/originals/b5/31/86/b53186abd0437b9b50127d962115ab9b.jpg" width="400" height="250">
+            </div>
+        </div>
+    </div>
+     <footer><h3>25-june-2024</h></footer>
+</body>
+</html>
